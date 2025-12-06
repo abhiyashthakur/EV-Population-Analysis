@@ -8,11 +8,8 @@ This project analyzes Electric Vehicle (EV) population data to uncover trends in
 
 ## 👤 Author
 
-**Abhiyash Thakur**
-- Roll No: 6
-- Registration No: 12508573
-- Course: CAB105 - Data Visualization Fundamentals
-- Section: D2515
+**Abhiyash Thakur**  
+[GitHub](https://github.com/abhiyashthakur) | [Email](mailto:abhiyashthakur@proton.me)
 
 ## 📁 Dataset
 
@@ -95,5 +92,4 @@ For questions or feedback, please reach out through GitHub issues.
 
 ---
 
-**Date:** November 30, 2025  
-**Course:** Data Visualization Fundamentals (CAB105)
+⭐ **Star this repository if you find it helpful!**
