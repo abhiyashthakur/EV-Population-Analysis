@@ -60,7 +60,7 @@ pip install pandas numpy matplotlib seaborn jupyter
 
 1. Open the Jupyter Notebook:
 ```bash
-jupyter notebook Abhiyash_Thakur_Roll6_Reg12508573_CAB105_DataVisualization.ipynb
+jupyter notebook EV_Population_Analysis.ipynb
 ```
 
 2. Run all cells to reproduce the analysis
