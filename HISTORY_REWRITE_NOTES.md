@@ -33,9 +33,11 @@ The notebook file was renamed throughout the entire git history:
 ### 3. Commit History Changes
 Original commit history had 6 commits. After history rewriting:
 - **Commits removed**: 4 (became empty or redundant after sanitization)
-- **Commits remaining**: 2
+- **Core commits remaining**: 2
   1. Initial commit (now with sanitized content and correct filename)
   2. Add MIT License
+
+**Note**: Additional documentation commits were added after the history rewrite to document the process.
 
 The following commits were removed because they became empty after the initial commit was fixed:
 - "Remove personal course and registration details" (commit 03bd0f8)

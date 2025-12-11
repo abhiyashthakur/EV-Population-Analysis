@@ -10,7 +10,8 @@
 The git history rewriting has been completed successfully:
 - All sensitive personal course details have been removed from commits
 - The file has been renamed throughout history
-- The commit count reduced from 6 to 3 commits
+- The core history reduced from 6 to 2 commits (4 became empty and were removed)
+- Additional documentation commits added after the rewrite
 - All project code and functionality preserved
 
 However, the cleaned history exists only in this local branch. The remote repository still has the old history with sensitive data.
@@ -18,7 +19,7 @@ However, the cleaned history exists only in this local branch. The remote reposi
 ## Why Force Push is Needed
 
 Normal `git push` will fail because the histories have diverged:
-- **Local branch**: 3 clean commits without sensitive data
+- **Local branch**: Clean commits without sensitive data (2 rewritten + documentation commits)
 - **Remote branch**: 7 commits including ones with sensitive data
 
 Git will refuse to push because it would "lose" commits from the remote. But that's exactly what we want - to permanently delete those commits with sensitive data.
@@ -44,8 +45,9 @@ The script will:
 git branch --show-current
 # Should show: copilot/remove-sensitive-data-history
 
-# Verify your local history is clean (should show 4 commits)
+# Verify your local history is clean
 git log --oneline
+# Should show: 2 core rewritten commits + documentation commits
 
 # Force push with lease (safer than --force)
 git push --force-with-lease origin copilot/remove-sensitive-data-history
